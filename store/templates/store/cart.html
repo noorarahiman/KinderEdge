@@ -1,0 +1,9 @@
+<h1>Kinderedge Cart</h1>
+
+{% if products %}
+    {% for product in products %}
+        <p>{{ product.name }} - {{ product.price }}</p>
+    {% endfor %}
+{% else %}
+    <p>Your cart is empty</p>
+{% endif %}
